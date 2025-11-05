@@ -1,0 +1,15 @@
+#ifndef MULTIPLYOPERATOR_H
+#define MULTIPLYOPERATOR_H
+#include "Operator.h"
+
+template <class T>
+class MultiplyOperator : public Operator{
+    public:
+    T operator()(T lhs, T rhs);
+    Operator<T>* clone();
+};
+
+
+
+
+#endif
